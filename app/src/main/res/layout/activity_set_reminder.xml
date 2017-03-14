@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="6">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="6"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+        
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent" 
+            android:textColor="@android:color/background_light"
+            android:text="Select Date and Time"
+            android:layout_weight="2"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:background="@color/colorPrimaryDark"
+            android:id="@+id/select_date_and_time_text_view"/>
+
+        <DatePicker
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:paddingTop="40dp"
+            android:background="@color/colorAccent"
+            android:id="@+id/date_picker"
+            android:visibility="visible"></DatePicker>
+
+        <TimePicker
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:layout_weight="4"
+            android:background="@color/colorAccent"
+            android:id="@+id/time_picker"></TimePicker>
+        
+    </LinearLayout>
+    
+
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="6"
+        android:layout_weight="3"
+        android:orientation="horizontal">
+        
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textColor="@android:color/background_dark"
+            android:text="Description :-"
+            android:textSize="20dp"
+            android:layout_weight="2"
+            android:gravity="center"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:hint="Description"
+            android:id="@+id/edit_text_description"/>
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@android:color/darker_gray"
+            android:text="Set Reminder"
+            android:id="@+id/set_reminder_button"/>
+
+    </LinearLayout>
+
+</LinearLayout>
